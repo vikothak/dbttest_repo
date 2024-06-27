@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw source
+    database: DEV  
+    schema: RAW_DATA  
+    tables:
+      - name: products
+      - name: customers
