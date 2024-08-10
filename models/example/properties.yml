@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dim_products_model
+    config:
+      materialized: table 
+    columns:
+      - name: price
+        description: "The primary key for this table"      
+        tests:
+            - np_check       
+sources:
+  - name: raw_data # this is the source_name
+    tables:
+      - name: "products" # this is the table_name
+        columns:
+          - name: price
+            description: "The primary key for this table"      
+            tests:
+                - unique
+                - not_null      
+      - name: "customers"

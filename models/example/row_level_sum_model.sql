@@ -1,0 +1,1 @@
+select a,b,{{row_sum('a','b')}} as row_level_sum from RAW_DATA.t1

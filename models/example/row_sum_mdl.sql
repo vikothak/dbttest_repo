@@ -1,0 +1,1 @@
+select "id",{{row_sum('"id"','"id"')}} as xyz from raw_data."products"
