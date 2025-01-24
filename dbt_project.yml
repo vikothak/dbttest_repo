@@ -41,3 +41,6 @@ models:
     example:
       +materialized: view
       +transient: true
+    dbt_train25:
+      +materialized: table
+      +transient: true
