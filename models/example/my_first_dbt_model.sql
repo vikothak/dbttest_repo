@@ -7,7 +7,6 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='view',target_schema='PUBLIC') }}
 
 with source_data as (
 

@@ -1,0 +1,22 @@
+sources:
+  - name: raw_data # this is the source_name
+    tables:
+      - name: "stg_products" # this is the table_name 
+        columns:
+          - name: '"id"'
+            description: "The primary key for this table"      
+            tests:
+                - unique
+                - not_null           
+      - name: "stg_customers"
+
+models:
+  - name: dim_products_dbt
+    config:
+      materialized: table 
+    columns:
+      - name: '"id"'
+        description: "The primary key for this table"      
+        tests:
+            - unique
+            - np_check             

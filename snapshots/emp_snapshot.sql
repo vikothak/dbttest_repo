@@ -11,6 +11,6 @@
     )
 }}
 
-select * from DEV.RAW_DATA.RAW_EMP
+select * from DEV.RAW_DATA.EMPLOYEE
 
 {% endsnapshot %}
